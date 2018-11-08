@@ -1,0 +1,75 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+//Variables
+$w: 100%;
+$h: 100%;
+$font-stack: 'Raleway', Helvetica, sans-serif;
+$place-fill: #444;
+$tip-color: #e2e3e3;
+$gray: #333;
+$transparent: rgba(0,0,0,.7);
+
+body {
+  width: $w;
+  height: $h;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+#intro {
+  width: $w;
+  border-bottom: 2px solid $gray;
+}
+h1 {
+  font: bold 2rem $font-stack;
+}
+
+h2 {
+  font: 1rem $font-stack;
+  margin: 1rem auto 0;
+}
+#footer {
+  width: $w;
+  position: absolute;
+  bottom: 0;
+  font: .75rem $font-stack;
+}
+#legend{
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  padding: 10px;
+}
+#legend p {
+  font: .75rem $font-stack;
+}
+.axis path {
+  fill: none;
+}
+#map {
+  margin-top: 7rem;
+}
+text {
+  pointer-events: none;
+  font: .75rem $font-stack;
+}
+.states {
+  fill: $gray
+}
+.states :hover {
+  stroke: $gray;
+  stroke-width: 2.5px;
+}
+.place,
+.place-label{
+  fill: $place-fill;
+}
+.d3-tip {
+  font: 1rem $font-stack;
+  padding: 10px;
+  background: $transparent;
+  color: $tip-color;
+}
+
